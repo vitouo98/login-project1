@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login/Register UI vitou</title>
+    <link rel="stylesheet" href="home-login.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="tabs">
+        <button id="loginTab" class="active">Login</button>
+        <button id="registerTab">Register</button>
+      </div>
+
+      <form id="loginForm" class="form active">
+        <input type="email" id="loginEmail" name="email" placeholder="Email" required value="" />
+        <input type="password" id="loginPassword" name="password" placeholder="Password" required />
+        <button type="submit" class="btn">
+          <i class="fa fa-sign-in-alt"></i> Login
+        </button>
+        <p class="or">Or continue with</p>
+        <div class="socials">
+          <button class="social">G</button>
+          <button class="social">F</button>
+          <button class="social">T</button>
+        </div>
+      </form>
+
+      <form id="registerForm" class="form">
+        <input type="text" id="registerFullName" name="fullName" placeholder="Full Name" required />
+        <input type="email" id="registerEmail" name="email" placeholder="Email" required />
+        <input type="password" id="registerPassword" name="password" placeholder="Password" required />
+        <input type="password" id="registerConfirmPassword" name="confirmPassword" placeholder="Confirm Password" required />
+        <button type="submit" class="btn">
+          <i class="fa fa-user-plus"></i> Register
+        </button>
+        <p class="or">Or sign up with</p>
+        <div class="socials">
+          <button class="social">G</button>
+          <button class="social">F</button>
+          <button class="social">T</button>
+        </div>
+      </form>
+    </div>
+
+    <script src="home-login.js"></script>
+  </body>
+</html>
